@@ -1,41 +1,38 @@
 # node-grvtr
 ============
 
-Small library that will create a gravatar url based on a passed email
+Small library that generates a gravatar url based on an email.
 
 ## How to use
 
-At first you need to install npm package
+At first you need to install npm package:
 
 ```bash
 npm install grvtr
 ```
 
-Then you can require it in your project and pass to the utility an email string
+Then you can require it in your project and pass an email string to the utility:
 
 ```javascript
 var grvtr = require('grvtr');
 
-grvtr.create('john.doe@example.com'); 
-
-// returns http://gravatar.com/avatar/[HASH]
+grvtr.create('john.doe@example.com'); // returns http://gravatar.com/avatar/[HASH]
 ```
 
 Gravatar allows you to use several options 
 
 ```javascript
 grvtr.create('john.doe@example.com', { 
-	size: 200, // 1px - 2048px
+	size: 200,     // 1px - 2048px
 	default: 'mm', // 'identicon', 'monsterid', 'wavatar', 'retro', 'blank' 
-	rating: 'g', // 'pg', 'r', 'x'
+	rating: 'g',   // 'pg', 'r', 'x'
 	secure: true,
 	forcedefault: true
 });
-
 // returns http://gravatar.com/avatar/[HASH]?params
 ```
 
-According to the [gravatar.com](http://gravatar.com) documentation:
+## Options according to the [gravatar.com](http://gravatar.com) documentation:
 
 ### Size
 
@@ -98,7 +95,8 @@ or if you have jasmine node installed globally with such command:
 jasmine-node test
 ```
 
-==========
+* * *
+
 ##### MIT Licensed
 
 (c) 2013 Dmitri Voronianski
