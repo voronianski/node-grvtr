@@ -1,4 +1,4 @@
-var	crypto = require('crypto'),
+var crypto = require('crypto'),
 	querystring = require('querystring');
 
 /*
