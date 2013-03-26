@@ -32,7 +32,7 @@ grvtr.create('john.doe@example.com', {
 // returns http://gravatar.com/avatar/[HASH]?params
 ```
 
-## Options according to the [gravatar.com](http://gravatar.com) documentation:
+## Options according to [gravatar.com](http://gravatar.com) documentation:
 
 ### Size
 
