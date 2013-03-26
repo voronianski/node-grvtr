@@ -23,7 +23,7 @@ Gravatar allows you to use several options
 
 ```javascript
 grvtr.create('john.doe@example.com', { 
-	size: 200,     // 1px - 2048px
+	size: 200,     // 1- 2048px
 	default: 'mm', // 'identicon', 'monsterid', 'wavatar', 'retro', 'blank' 
 	rating: 'g',   // 'pg', 'r', 'x'
 	secure: true,
@@ -73,11 +73,11 @@ You can self-rate images indicating if an image is appropriate for a certain aud
 
 ### Forcedefault
 
-Use if you want to force the default image to always load.
+Use if you want to force the default image to always load set this property to ``true``.
 
 ### Secure
 
-If you're displaying Gravatars on a page that is being served over SSL you can server gravatars via SSL as well.
+If you're displaying Gravatars on a page that is being served over SSL you can server gravatars via SSL as well while setting this one to ``true``.
 
 ## Contributing
 
