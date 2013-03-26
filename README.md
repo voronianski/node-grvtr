@@ -1,7 +1,7 @@
 # node-grvtr
 ============
 
-Small library that generates a gravatar url based on an email.
+Small node.js library that generates gravatar url based on an email.
 
 ## How to use
 
@@ -89,7 +89,7 @@ For developing purposes, you can test it like:
 npm test
 ```
 
-or if you have jasmine node installed globally with such command:
+or if you have [jasmine-node](https://github.com/mhevery/jasmine-node) installed globally with such command:
 
 ```javascript
 jasmine-node test
