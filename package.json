@@ -1,7 +1,12 @@
 {
   "name": "grvtr",
   "description": "small gravatar node.js library",
-  "keywords": ["gravatar", "avatar", "generate", "url"],
+  "keywords": [
+    "gravatar",
+    "avatar",
+    "generate",
+    "url"
+  ],
   "author": "Dmitri Voronianski <dmitri.voronianski@gmail.com>",
   "version": "0.1.0",
   "scripts": {
@@ -15,5 +20,15 @@
   },
   "homepage": "https://github.com/voronianski/node-grvtr",
   "bugs": "https://github.com/voronianski/node-grvtr.js/issues",
-  "license": "MIT"
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "52235b796649293dd52804e02870ad73ab63802c",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/voronianski/node-grvtr.git"
+  }
 }
