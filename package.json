@@ -1,5 +1,5 @@
 {
-  "name": "grvtr.js",
+  "name": "grvtr",
   "description": "small gravatar node.js library",
   "keywords": ["gravatar", "avatar", "generate", "url"],
   "author": "Dmitri Voronianski <dmitri.voronianski@gmail.com>",

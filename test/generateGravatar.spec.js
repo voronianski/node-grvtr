@@ -32,6 +32,10 @@ describe('./src/generateGravatar.js', function () {
 				expect(grvtr.create(email, { secure: true })).toContain('https');
 			});
 
+			it('should add forcedefault option', function () {
+				expect(grvtr.create(email, { forcedefault: true })).toContain('?f=y');
+			});
+
 			it('should add several options', function () {
 				expect(grvtr.create(email, { size: 20, default: 'mm' })).toContain('?s=20&d=mm');
 			});

@@ -40,6 +40,10 @@ function create (email, options) {
 		params.r = options.rating;
 	}
 
+	if (options.forcedefault) {
+		params.f = 'y';
+	}
+
 	params = '?' + querystring.stringify(params);
 
 	return baseUrl + hash + params;
