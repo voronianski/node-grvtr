@@ -1,0 +1,19 @@
+{
+  "name": "grvtr.js",
+  "description": "small gravatar node.js library",
+  "keywords": ["gravatar", "avatar", "generate", "url"],
+  "author": "Dmitri Voronianski <dmitri.voronianski@gmail.com>",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "node_modules/.bin/jasmine-node --verbose --color test"
+  },
+  "devDependencies": {
+    "jasmine-node": "1.3.x"
+  },
+  "engines": {
+    "node": ">=0.8.x"
+  },
+  "homepage": "https://github.com/voronianski/node-grvtr",
+  "bugs": "https://github.com/voronianski/node-grvtr.js/issues",
+  "license": "MIT"
+}
