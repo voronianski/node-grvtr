@@ -22,12 +22,26 @@ grvtr.create('john.doe@example.com'); // returns http://gravatar.com/avatar/[HAS
 Gravatar allows you to use several options 
 
 ```javascript
+// sync version
 grvtr.create('john.doe@example.com', { 
 	size: 200,     // 1- 2048px
 	default: 'mm', // 'identicon', 'monsterid', 'wavatar', 'retro', 'blank' 
 	rating: 'g',   // 'pg', 'r', 'x'
 	secure: true,
 	forcedefault: true
+});
+// returns http://gravatar.com/avatar/[HASH]?params
+
+
+// async version
+grvtr.create('john.doe@example.com', { 
+	size: 200,     // 1- 2048px
+	default: 'mm', // 'identicon', 'monsterid', 'wavatar', 'retro', 'blank' 
+	rating: 'g',   // 'pg', 'r', 'x'
+	secure: true,
+	forcedefault: true
+}, function (gravatarSrc) {
+    // do something with the src
 });
 // returns http://gravatar.com/avatar/[HASH]?params
 ```
