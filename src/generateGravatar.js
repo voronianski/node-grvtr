@@ -13,14 +13,16 @@ function trim (str) {
  *
  * @param email {String} - user email that is using 'gravatar' service
  * @param options {Object} - e.g. { size: 20, default: mm, rating: g, secure: false}
+ * @param callback {Function} - (optional) pass url string for async version
  * @return {String} - url string
  */
-function create (email, options) {
+function create (email, options, callback) {
 	var clean = trim(email).toLowerCase(),
 		hash = crypto.createHash('md5').update(clean).digest('hex'),
 		options = options || {},
 		params = {},
-		baseUrl;
+		baseUrl,
+        gravatarSrc;
 
 	if (options.secure) {
 		baseUrl = 'https://gravatar.com/avatar/';
@@ -45,8 +47,13 @@ function create (email, options) {
 	}
 
 	params = '?' + querystring.stringify(params);
-
-	return baseUrl + hash + params;
+    gravatarSrc = baseUrl + hash + params;
+    
+    if (callback) {
+        return callback(gravatarSrc);
+    }
+    
+	return gravatarSrc;
 }
 
 exports.create = create;
