@@ -22,7 +22,7 @@ function create (email, options, callback) {
 		options = options || {},
 		params = {},
 		baseUrl,
-        gravatarSrc;
+		gravatarUrl;
 
 	if (options.secure) {
 		baseUrl = 'https://gravatar.com/avatar/';
@@ -47,13 +47,14 @@ function create (email, options, callback) {
 	}
 
 	params = '?' + querystring.stringify(params);
-    gravatarSrc = baseUrl + hash + params;
-    
-    if (callback) {
-        return callback(gravatarSrc);
-    }
-    
-	return gravatarSrc;
+
+	gravatarUrl = baseUrl + hash + params;
+
+	if (callback) {
+		return callback(gravatarUrl);
+	}
+
+	return gravatarUrl;
 }
 
 exports.create = create;

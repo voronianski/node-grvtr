@@ -41,6 +41,21 @@ describe('./src/generateGravatar.js', function () {
 			});
 
 		});
+
+		describe('when callback is passed', function () {
+			var generatedUrl;
+
+			beforeEach(function (done) {
+				grvtr.create(email, { size: 200 }, function (url) {
+					generatedUrl = url;
+					done();
+				});
+			});
+
+			it('should return generated url in callback argument', function () {
+				expect(generatedUrl).toBe('http://gravatar.com/avatar/' + hash + '?s=200');
+			});
+		});
 	});
 
 });
