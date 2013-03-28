@@ -1,5 +1,5 @@
 describe('./src/generateGravatar.js', function () {
-	var grvtr = require('../src/generateGravatar.js'),
+	var grvtr = require('../'),
 		crypto = require('crypto');
 
 	describe('create() method', function () {

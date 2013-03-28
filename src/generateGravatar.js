@@ -1,11 +1,18 @@
-var crypto = require('crypto'),
-	querystring = require('querystring');
+var crypto = require('crypto');
 
 /*
  * Trim from spaces helper
  */
 function trim (str) {
 	return str.replace(/^\s*/, '').replace(/\s*$/, '');
+}
+
+function query(params) {
+	var q = '';
+	for(var param in params) {
+		q += param + '=' + params[param] + '&';
+	}
+	return q.substring(0, q.length - 1);
 }
 
 /*
@@ -47,7 +54,7 @@ function create (email, options, callback) {
 		params.f = 'y';
 	}
 
-	params = '?' + querystring.stringify(params);
+	params = '?' + query(params);
 
 	gravatarUrl = baseUrl + hash + params;
 
