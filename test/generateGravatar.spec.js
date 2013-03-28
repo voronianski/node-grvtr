@@ -21,7 +21,7 @@ describe('./src/generateGravatar.js', function () {
 			});
 
 			it('should add default option', function () {
-				expect(grvtr.create(email, { default: 'mm' })).toContain('?d=mm');
+				expect(grvtr.create(email, { defaultImage: 'mm' })).toContain('?d=mm');
 			});
 
 			it('should add rating option', function () {
@@ -33,11 +33,11 @@ describe('./src/generateGravatar.js', function () {
 			});
 
 			it('should add forcedefault option', function () {
-				expect(grvtr.create(email, { forcedefault: true })).toContain('?f=y');
+				expect(grvtr.create(email, { forceDefault: true })).toContain('?f=y');
 			});
 
 			it('should add several options', function () {
-				expect(grvtr.create(email, { size: 20, default: 'mm' })).toContain('?s=20&d=mm');
+				expect(grvtr.create(email, { size: 20, defaultImage: 'mm' })).toContain('?s=20&d=mm');
 			});
 
 		});

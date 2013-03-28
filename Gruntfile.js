@@ -3,7 +3,11 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    jshint: {
+      jasmine_node: {
+        projectRoot: "."
+      },
+
+      jshint: {
       options: {
         curly: true,
         eqeqeq: true,
@@ -33,9 +37,9 @@ module.exports = function(grunt) {
 
   // Laoded tasks
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-jasmine-node');
 
   // Default task.
-  grunt.registerTask('default', ['jshint']);
-  grunt.registerTask('test', ['mocha']);
-  grunt.registerTask('watch-test', ['watch']);
+  grunt.registerTask('default', ['jshint', 'test']);
+  grunt.registerTask('test', ['jasmine_node']);
 };
