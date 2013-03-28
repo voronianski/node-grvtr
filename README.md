@@ -24,10 +24,10 @@ Gravatar allows you to use several options
 ```javascript
 grvtr.create('john.doe@example.com', { 
 	size: 200,     // 1- 2048px
-	default: 'mm', // 'identicon', 'monsterid', 'wavatar', 'retro', 'blank' 
+	defaultImage: 'mm', // 'identicon', 'monsterid', 'wavatar', 'retro', 'blank' 
 	rating: 'g',   // 'pg', 'r', 'x'
 	secure: true,
-	forcedefault: true
+	forceDefault: true
 });
 // returns http://gravatar.com/avatar/[HASH]?params
 ```

@@ -19,10 +19,11 @@ function trim (str) {
 function create (email, options, callback) {
 	var clean = trim(email).toLowerCase(),
 		hash = crypto.createHash('md5').update(clean).digest('hex'),
-		options = options || {},
 		params = {},
 		baseUrl,
 		gravatarUrl;
+
+	options = options || {};
 
 	if (options.secure) {
 		baseUrl = 'https://gravatar.com/avatar/';
@@ -34,15 +35,15 @@ function create (email, options, callback) {
 		params.s = options.size;
 	}
 
-	if (options.default) {
-		params.d = options.default;
+	if (options.defaultImage) {
+		params.d = options.defaultImage;
 	}
 
 	if (options.rating) {
 		params.r = options.rating;
 	}
 
-	if (options.forcedefault) {
+	if (options.forceDefault) {
 		params.f = 'y';
 	}
 

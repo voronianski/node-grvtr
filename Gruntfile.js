@@ -22,7 +22,9 @@ module.exports = function(grunt) {
           _: true,
           Marionette: true,
           $: true,
-          slice: true
+          slice: true,
+          require: true,
+          exports: true
         }
       },
       js: ['src/**/*.js']
