@@ -86,21 +86,35 @@ Use if you want to force the default image to always load set this property to `
 
 If you're displaying Gravatars on a page that is being served over SSL you can server gravatars via SSL as well while setting this one to ``true``.
 
+# Building and testing
+
+Install the application,
+
+```bash
+npm install
+```
+
+Make sure, you have latest ``grunt`` installed,
+
+```bash
+npm install -g grunt-cli
+```
+
+Run build,
+
+```bash
+grunt
+```
+
+To just run ``jshint``,
+
+```bash
+grunt jshint
+```
+
 ## Contributing
 
 If you have some ideas or found a bug feel free to raise an [issue](https://github.com/voronianski/node-grvtr/issues).
-
-For developing purposes, you can test it like:
-
-```javascript
-npm test
-```
-
-or if you have [jasmine-node](https://github.com/mhevery/jasmine-node) installed globally with such command:
-
-```javascript
-jasmine-node test
-```
 
 * * *
 
