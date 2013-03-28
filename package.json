@@ -32,5 +32,8 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/voronianski/node-grvtr.git"
+  },
+  "dependencies": {
+    "blueimp-md5": "~1.0.0"
   }
 }
