@@ -28,10 +28,14 @@ module.exports = function(grunt) {
           $: true,
           slice: true,
           require: true,
-          exports: true
+          exports: true,
+          expect: true,
+          it: true,
+          describe: true,
+          beforeEach: true
         }
       },
-      js: ['src/**/*.js']
+      js: ['src/**/*.js', 'test/**/*.js']
     }
   });
 
