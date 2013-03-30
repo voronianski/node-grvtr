@@ -7,6 +7,9 @@ function trim (str) {
 	return str.replace(/^\s*/, '').replace(/\s*$/, '');
 }
 
+/*
+ * Create querystring
+ */
 function query(params) {
 	var q = '';
 	for(var param in params) {
