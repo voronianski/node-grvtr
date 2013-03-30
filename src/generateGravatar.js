@@ -1,11 +1,18 @@
-var crypto = require('crypto'),
-	querystring = require('querystring');
+var crypto = require('crypto');
 
 /*
  * Trim from spaces helper
  */
 function trim (str) {
 	return str.replace(/^\s*/, '').replace(/\s*$/, '');
+}
+
+function query(params) {
+	var q = '';
+	for(var param in params) {
+		q += param + '=' + params[param] + '&';
+	}
+	return q.substring(0, q.length - 1);
 }
 
 /*
@@ -19,10 +26,11 @@ function trim (str) {
 function create (email, options, callback) {
 	var clean = trim(email).toLowerCase(),
 		hash = crypto.createHash('md5').update(clean).digest('hex'),
-		options = options || {},
 		params = {},
 		baseUrl,
 		gravatarUrl;
+
+	options = options || {};
 
 	if (options.secure) {
 		baseUrl = 'https://gravatar.com/avatar/';
@@ -34,19 +42,19 @@ function create (email, options, callback) {
 		params.s = options.size;
 	}
 
-	if (options.default) {
-		params.d = options.default;
+	if (options.defaultImage) {
+		params.d = options.defaultImage;
 	}
 
 	if (options.rating) {
 		params.r = options.rating;
 	}
 
-	if (options.forcedefault) {
+	if (options.forceDefault) {
 		params.f = 'y';
 	}
 
-	params = '?' + querystring.stringify(params);
+	params = '?' + query(params);
 
 	gravatarUrl = baseUrl + hash + params;
 
