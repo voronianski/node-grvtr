@@ -36,7 +36,7 @@ Also you can pass a callback to ``create`` method (do not forget to add empty ob
 
 ```javascript
 grvtr.create('john.doe@example.com', {}, function (gravatarUrl) {
-	console.log(gravatarUrl); // or do something with the src 'http://gravatar.com/avatar/[HASH]?params'
+	console.log(gravatarUrl); // or do something with the src 'http://gravatar.com/avatar/[HASH]'
 });
 ```
 ## Options according to [gravatar.com](http://gravatar.com) documentation:
