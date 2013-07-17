@@ -1,5 +1,4 @@
 # node-grvtr
-============
 
 Small node.js library that generates gravatar url based on an email.
 
