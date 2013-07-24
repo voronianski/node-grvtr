@@ -1,5 +1,7 @@
 # node-grvtr
 
+[![NPM](https://nodei.co/npm/grvtr.png?downloads=true)](https://nodei.co/npm/grvtr/)
+
 Small node.js library that generates gravatar url based on an email.
 
 ## How to use
