@@ -119,6 +119,5 @@ If you have some ideas or found a bug feel free to raise an [issue](https://gith
 
 * * *
 
-##### MIT Licensed
-
+**MIT Licensed**
 (c) 2013 Dmitri Voronianski
