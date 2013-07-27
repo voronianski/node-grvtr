@@ -85,7 +85,7 @@ Use if you want to force the default image to always load set this property to `
 
 ### Secure
 
-If you're displaying Gravatars on a page that is being served over SSL you can server gravatars via SSL as well while setting this one to ``true``.
+If you're displaying Gravatars on a page that is being served over SSL you can serve gravatars via SSL simply setting this one to ``true``.
 
 ## Building and testing
 
