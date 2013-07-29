@@ -24,7 +24,7 @@ Gravatar allows you to use several options
 
 ```javascript
 grvtr.create('john.doe@example.com', { 
-	size: 200,     // 1- 2048px
+	size: 200,     // 1 - 2048px
 	defaultImage: 'mm', // 'identicon', 'monsterid', 'wavatar', 'retro', 'blank' 
 	rating: 'g',   // 'pg', 'r', 'x'
 	secure: true,
