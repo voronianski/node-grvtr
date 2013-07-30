@@ -20,7 +20,7 @@ var grvtr = require('grvtr');
 grvtr.create('john.doe@example.com'); // returns http://gravatar.com/avatar/[HASH]
 ```
 
-Gravatar allows you to use several options 
+Gravatar allows you to use several options:
 
 ```javascript
 grvtr.create('john.doe@example.com', { 
