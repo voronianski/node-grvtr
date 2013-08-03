@@ -81,11 +81,11 @@ You can self-rate images indicating if an image is appropriate for a certain aud
 
 ### Forcedefault
 
-Use if you want to force the default image to always load set this property to ``true``.
+Use if you want to force the default image to always load - set ``forceDefault`` property to ``true``.
 
 ### Secure
 
-If you're displaying Gravatars on a page that is being served over SSL you can serve gravatars via SSL simply setting this one to ``true``.
+If you're displaying Gravatars on a page that is being served over SSL, you can serve gravatars via SSL simply setting this one to ``true``.
 
 ## Building and testing
 
